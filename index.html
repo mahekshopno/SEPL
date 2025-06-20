@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Industrial Equipment Solutions</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #1E3A8A 0%, #3B82F6 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .loader-container {
+            text-align: center;
+            color: white;
+        }
+        
+        .loader {
+            width: 50px;
+            height: 50px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-top: 3px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .loading-text {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .loading-subtitle {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+    </style>
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fsteamequi2515back.builtwithrocket.new&_be=https%3A%2F%2Fappproject.dhiwise.com&_v=0.1.3"></script>
+</head>
+<body>
+    <div class="loader-container">
+        <div class="loader"></div>
+        <div class="loading-text">Loading Industrial Solutions</div>
+        <div class="loading-subtitle">Redirecting to your industrial equipment portal...</div>
+    </div>
+
+    <script>
+        // Redirect to the corporate landing page after a brief loading animation
+        setTimeout(function() {
+            window.location.href = 'pages/corporate_landing_page.html';
+        }, 2000);
+    </script>
+<script id="dhws-dataInjector" src="/public/dhws-data-injector.js"></script>
+</body>
+</html>
